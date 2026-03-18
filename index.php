@@ -22,6 +22,7 @@ require_once './models/Movie.php';
 	$comedy = new Genre("Comedy");
 	$movie = new Movie("The Matrix", "The Wachowskis", 1999, [$action, $comedy]);
 	$movie->setDiscountPercentage(20);
+
 	echo $movie->title . "<br>";
 	echo $movie->director . "<br>";
 	echo $movie->release_year . "<br>";
